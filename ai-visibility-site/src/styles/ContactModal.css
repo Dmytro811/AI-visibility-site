@@ -1,0 +1,49 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+
+.contact-modal {
+  background: #111;
+  color: #fff;
+  padding: 32px;
+  border-radius: 12px;
+  max-width: 420px;
+  width: 90%;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.contact-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.contact-modal input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #222;
+  color: #fff;
+}
